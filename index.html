@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="dark">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="getAPIData.js"></script>
+
+
+<head>
+  <title>Charley Stone's Webpage</title>
+  <link rel="icon" type="image/x-icon" href="/images/Charley.ico">
+  <link href="main.css" rel="stylesheet" type="text/css" />
+  <link href="buttonMenu.css" rel="stylesheet" type="text/css" />
+  <link href="loadingScreen.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VE8B34DPNJ');
+</script>
+
+
+<script>
+  $(window).on("load", function () {
+    $(".loader-wrapper").fadeOut("slow");
+    document.body.style.overflow = "visible";
+    document.body.style.overflowX = "hidden";
+  });
+</script>
+
+<body>
+
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <div class="flexContainer">
+    <div class="verticalFlexContainer1">
+      <div class="websiteTitleHeader">
+        Charley Stone
+      </div>
+      <div class="websiteTitleSubtext">
+        Aerospace Engineering Student
+      </div>
+    </div>
+    <div class="verticalFlexContainer2">
+      <h2 class="banner">
+          Test Text
+      </h2>
+    </div>
+  </div>
+
+  <div class="Landing">
+    <nav id='menu'>
+      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+      <ul>
+        <li><a href='/index.html'>Home</a></li>
+        <li><a class='dropdown-arrow' href=''>Projects</a>
+          <ul class='sub-menus'>
+            <li><a href='/index.html'>Personal Website</a></li>
+            <li><a href='/schoolProjects.html'>Projects</a></li>
+          </ul>
+        </li>
+        <li><a href='/about.html'>About</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+</body>
+
+</html>

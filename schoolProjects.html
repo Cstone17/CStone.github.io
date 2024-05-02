@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="dark">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<head>
+  <title>Charley Stone's Website</title>
+  <link rel="icon" type="image/x-icon" href="/Charley.ico">
+  <link href="main.css" rel="stylesheet" type="text/css" />
+  <link href="buttonMenu.css" rel="stylesheet" type="text/css" />
+  <link href="loadingScreen.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<script> 
+  $(window).on("load", function () {
+    $(".loader-wrapper").fadeOut("slow");
+    document.body.style.overflow = "visible";
+    document.body.style.overflowX = "hidden";
+  });
+</script>
+
+<body>
+
+  <!--This Is the spinning square loading screen-->
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+  <!--This creates the header of the website-->
+  <div class="flexContainer">
+    <div class="verticalFlexContainer1">
+      <div class="websiteTitleHeader">
+        Charley's Website!
+      </div>
+      <div class="websiteTitleSubtext">
+        Aerospace Engineering Student
+      </div>
+    </div>
+    <div class="verticalFlexContainer2">
+      <h2 class="banner">
+        Description / Banner Text
+      </h2>
+    </div>
+  </div>
+
+  <div class="Landing">
+    <nav id='menu'>
+      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+      <ul>
+        <li><a href='/index.html'>Home</a></li>
+        <li><a class='dropdown-arrow' href=''>Projects</a>
+          <ul class='sub-menus'>
+            <li><a href='/index.html'>Personal Website</a></li>
+            <li><a href='/schoolProjects.html'>Projects</a></li>
+          </ul>
+        </li>
+        <li><a href='/about.html'>About</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="banner" style="margin-top: 75px; font-size:50px;">
+    School Projects
+  </div>
+  <div class="table-wrap">
+    <div class="project_Item">
+      <b style="font-size:30px;">Remote Control Robot</b><br>
+      <b style="font-size:20px;">Gloucester County Institute of Technology</b><br>
+         Designed and built a robot that could be controlled to pick up an object and dispose of it.
+    </div>
+    <div style="width: 10px;"></div>
+    <div class="project_Item">
+      <b style="font-size:30px;">Balloon Payload</b><br>
+      <b style="font-size:20px;">Gloucester County Institute of Technology</b><br>
+        Designed and built a payload system that would be attached to a balloon on a zipline that safely transported an egg.
+    </div>
+  </div>
+  <div class="table-wrap">
+    <div class="project_Item">
+      <b style="font-size:30px;">Trebuchet Assembly</b><br>
+      <b style="font-size:20px;">Gloucester County Institute of Technology</b><br>
+        In a team, modelled different parts of a trebuchet that came together to put together a final model in solidworks.
+    </div>
+    <div style="width: 10px;"></div>
+    <div class="project_Item">
+      <b style="font-size:30px;">Spacecraft Observation</b><br>
+      <b style="font-size:20px;">Florida Institute of Technology</b><br>
+        Wrote code in Python to track a satellite to be observed based on given conditions.
+    </div>
+  </div>
+  <div class="table-wrap">
+    <div class="project_Item">
+      <b style="font-size:30px;">Mission Plan</b><br>
+      <b style="font-size:20px;">Florida Institute of Technology</b><br>
+        Wrote code to plan the trajectory of an interplanetary space mission of choice.
+    </div>
+    <div style="width: 10px;"></div>
+    <div class="project_Item">
+      <b style="font-size:30px;">Control Systems Term Project</b><br>
+      <b style="font-size:20px;">Florida Institute of Technology</b><br>
+        Given a set of noisy unknown data, was tasked with analyzing it using a Bode plot and creating a compensator to meet requirements.
+    </div>
+  </div>
+  <div class="table-wrap">
+    <div class="project_Item">
+      <b style="font-size:30px;">Space Mission Design</b><br>
+      <b style="font-size:20px;">Florida Institute of Technology</b><br>
+        In a team, designed an interplanetary mission by writing requirements and a risk matrix. Then took those requirements and designed each subsystem to meet those requirements.
+    </div>
+    <div style="width: 10px;"></div>
+    <div class="project_Item">
+      <b style="font-size:30px;">Nozzle Design</b><br>
+      <b style="font-size:20px;">Florida Institute of Technology</b><br>
+        Given certain flow conditions, designed a minimum length bell nozzle and aerospike nozzle using the method of characteristics in MATLAB.
+    </div>
+  </div>
+  <div class="table-wrap">
+    <div class="project_Item">
+      <b style="font-size:30px;">ACT Term Project</b><br>
+      <b style="font-size:20px;">Florida Institute of Technology</b><br>
+         Presented a report on the Satellite Communications Toolbox in MATLAB toolbox for the class.
+      Detailed how the size of a satellite constellation affects communications uptime.
+    </div>
+    <div style="width: 10px;"></div>
+    <div>
+      <b style="font-size:30px;"><!-- Project Title Here --></b><br>
+      <b style="font-size:20px;"><!-- Location Here --> </b><br>
+        <!-- Project Content Here -->
+    </div>
+  </div>
+</body>
+
+</html>

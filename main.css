@@ -1,0 +1,179 @@
+body {
+  background: linear-gradient(90deg, #9cb3f3, #2d90c2);
+  background-repeat: repeat;
+  background-size: 100% 900%;
+  height: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@font-face {
+  font-family: Ailerons;
+  src: url("/fonts/Ailerons.otf") format("opentype");
+}
+
+.table-wrap>* {
+  display: table-cell;
+}
+
+.project_Item {
+  margin-left: 10px;
+  border-left: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.table-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding-bottom:10px;
+}
+
+.table-wrap>* {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 10px;
+}
+
+.websiteTitleWrap {
+  flex: 2;
+}
+
+.websiteTitleHeader {
+  font-family: 'Ailerons', sans-serif;
+  position: relative;
+  width: 100%;
+  font-weight: 600;
+  font-size: 3em;
+  color: rgb(56, 56, 56);
+  background-size: cover;
+  margin: 0 !important;
+}
+
+.websiteTitleSubtext {
+  font-family: 'Ailerons', sans-serif;
+  position: relative;
+  width: 100%;
+  font-weight: 600;
+  font-size: 2em;
+  color: rgb(56, 56, 56);
+  background-size: cover;
+  margin: 0 !important;
+}
+
+.Landing {
+  z-index: 35;
+  background-size: cover;
+  margin: 0 !important;
+}
+
+.fromFlorida {
+  background-color: #5d5096;
+}
+
+.notfromFlorida {
+  background-color: #4d4175;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.verticalFlexContainer1 {
+  margin-left: 10px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
+.verticalFlexContainer2 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+}
+
+.projectNewsContainer {
+  flex: 2;
+  border: #1C2541 3px solid;
+  background-color: #243b4b;
+  color: aliceblue;
+  box-shadow: rgba(50, 50, 50, 0.5) 10px 10px 5px;
+  justify-content: center;
+  align-self: flex-start !important;
+}
+
+.streamContainer {
+  flex: 4;
+  align-items: flex-start;
+}
+
+.nxSlideshowContainer {
+  flex: 2;
+  align-items: center;
+}
+
+.highlight-link {
+  box-shadow: inset 0 -0.225rem 0 aliceblue;
+  box-sizing: border-box;
+  color: aliceblue;
+  display: inline-block;
+  padding: 0.125rem 0.125rem;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+
+}
+
+.conditionalText {
+  visibility: hidden;
+  position: absolute;
+  top: -999999px;
+}
+
+.textOverlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner {
+  background-color: rgba(214, 214, 214, 0.315);
+  width: 100%;
+  border-radius: 6px;
+  color: rgb(56, 56, 56);
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+
+.shadGradient {
+  box-shadow: 10px, black;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+.ExperienceContainer {
+  flex: 2;
+  padding-left: 50px;
+
+}
+
+.LinksContainer {
+  flex: 2;
+  padding-right: 50px;
+}
