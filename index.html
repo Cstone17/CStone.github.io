@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" color-mode="dark">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="getAPIData.js"></script>
 
 
 <head>
-  <title>Charley Stone's Webpage</title>
-  <link rel="icon" type="image/x-icon" href="/images/Charley.ico">
+  <title>Webpage TITLE</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <title>Charley Stone's Website</title>
+  <link rel="icon" type="image/x-icon" href="/Charley.ico">
   <link href="main.css" rel="stylesheet" type="text/css" />
+  <link href="slideShow.css" rel="stylesheet" type="text/css" />
   <link href="buttonMenu.css" rel="stylesheet" type="text/css" />
   <link href="loadingScreen.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
-
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VE8B34DPNJ');
-</script>
-
-
-<script>
+<script> 
   $(window).on("load", function () {
     $(".loader-wrapper").fadeOut("slow");
     document.body.style.overflow = "visible";
@@ -32,13 +24,17 @@
 
 <body>
 
+  <!--This Is the spinning square loading screen-->
   <div class="loader-wrapper">
     <span class="loader"><span class="loader-inner"></span></span>
   </div>
+
+  <!--This creates the header of the website-->
   <div class="flexContainer">
     <div class="verticalFlexContainer1">
       <div class="websiteTitleHeader">
-        Charley Stone
+        NAME
+        Charley's Website!
       </div>
       <div class="websiteTitleSubtext">
         Aerospace Engineering Student
@@ -46,26 +42,40 @@
     </div>
     <div class="verticalFlexContainer2">
       <h2 class="banner">
-          Test Text
+        asdgaufguwfgoawfa
+        Description / Banner Text
       </h2>
     </div>
   </div>
 
+  <!--This is the button menu-->
   <div class="Landing">
     <nav id='menu'>
       <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
       <ul>
+        <!--Home page button-->
         <li><a href='/index.html'>Home</a></li>
+        <!--Projects drop-down menu-->
         <li><a class='dropdown-arrow' href=''>Projects</a>
           <ul class='sub-menus'>
             <li><a href='/index.html'>Personal Website</a></li>
-            <li><a href='/schoolProjects.html'>Projects</a></li>
+            <li><a href='/nxPage.html'>3D Modeling</a></li>
+            <li><a href='/OrbitSim.html'>Orbit Simulation</a></li>
+            <li><a href='/RocketSim.html'>Rocket Simulation</a></li>
+            <li><a href='/SchoolProjects.html'>School Projects</a></li>
+            <li><a href='/index.html'>Other Projects</a></li>
           </ul>
         </li>
+        <!--About page-->
         <li><a href='/about.html'>About</a></li>
       </ul>
     </nav>
   </div>
+
+  <div class="banner" style="margin-top: 75px; font-size:50px;">
+    Home Menu
+  </div>
+<div class="banner" style="width:50%">Click on the drop down menus to see my projects and information!</div>
 
 
 </body>
